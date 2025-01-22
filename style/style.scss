@@ -1,0 +1,28 @@
+// @import 'abstracts/';
+@import 'abstracts/variables';
+@import 'abstracts/animations';
+@import 'abstracts/mixins';
+
+// @import 'vendors/';
+
+// @import 'base/';
+@import 'base/globals';
+
+// @import 'layout/';
+@import 'layout/header';
+@import 'layout/footer';
+
+// @import 'components/';
+@import 'components/buttons';
+@import 'components/tag';
+
+// @import 'pages/';
+@import 'pages/home/hero';
+@import 'pages/home/testimonials';
+@import 'pages/home/listing';
+@import 'pages/home/categories';
+@import 'pages/home/about';
+@import 'pages/home/services';
+@import 'pages/home/contact';
+
+// @import 'themes/';

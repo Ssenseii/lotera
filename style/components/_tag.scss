@@ -1,0 +1,17 @@
+.tag{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    gap: 0.5rem;
+
+    img{
+        width: 24px;
+    }
+
+    strong{
+        color: var(--color-blue-500);
+        font-size: 14px;
+    }
+}

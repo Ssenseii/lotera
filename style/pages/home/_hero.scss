@@ -1,0 +1,161 @@
+.hero {
+	min-height: calc(100vh - 1rem);
+	margin: 0.5rem;
+	padding: 1rem;
+
+	border-radius: 2rem;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	justify-content: space-between;
+
+	background-image: url("/assets/images/graphics/graphic-9 - copy.jpg");
+	background-size: cover;
+	background-position: center;
+
+	&__actions {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+
+		width: 100%;
+
+		&-socials {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+
+			a {
+				width: 32px;
+				height: 32px;
+				border-radius: 50%;
+
+				display: grid;
+				place-items: center;
+
+				svg {
+					width: 18px;
+					fill: var(--light);
+
+					&:hover {
+						fill: var(--color-blue-600);
+					}
+
+					@include Alive;
+				}
+			}
+		}
+
+		&-main {
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+			justify-content: center;
+			gap: 1rem;
+
+			border: 1px solid var(--light);
+			color: var(--light);
+
+			text-decoration: none;
+
+			padding: 1rem;
+			border-radius: 2rem;
+
+			@include Alive;
+
+			span {
+				font-weight: 600;
+
+				@media screen and (max-width: 1024px) {
+					display: none;
+				}
+			}
+		}
+	}
+
+	&__content {
+		margin-bottom: 6rem;
+
+		display: flex;
+		flex-direction: row;
+
+		justify-content: space-between;
+		align-items: flex-start;
+
+		color: var(--light);
+
+		@media screen and (max-width: 1024px) {
+			flex-direction: column;
+		}
+
+		&-title {
+			width: 50%;
+			transform: translateY(-32px);
+
+			@media screen and (max-width: 1024px) {
+				width: 100%;
+				transform: translateY(0);
+			}
+
+			h1 {
+				font-size: 78px;
+				font-weight: 900;
+
+				@media screen and (max-width: 1024px) {
+					font-size: 32px;
+				}
+
+				span {
+					color: var(--color-blue-300);
+				}
+			}
+		}
+
+		&-text {
+			width: 34%;
+
+			@media screen and (max-width: 1024px) {
+				width: 70%;
+			}
+			@media screen and (max-width: 768px) {
+				width: 100%;
+			}
+
+			h3 {
+				font-size: 20px;
+				margin-bottom: 1rem;
+
+				@media screen and (max-width: 1024px) {
+					font-size: 18px;
+				}
+			}
+
+			p {
+				font-size: 16px;
+				line-height: 1.5;
+				width: 100%;
+				margin-bottom: 1rem;
+			}
+
+			a {
+				border: 1px solid var(--light);
+				border-radius: 50%;
+
+				width: 64px;
+				height: 64px;
+
+				display: grid;
+				place-items: center;
+
+				@include Alive;
+
+				svg {
+					color: var(--light);
+				}
+			}
+		}
+	}
+}
