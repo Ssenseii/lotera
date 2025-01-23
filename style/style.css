@@ -1422,6 +1422,11 @@ footer .footer-bottom p a:hover {
 .contact__left, .contact__right {
   width: 50%;
 }
+@media screen and (max-width: 768px) {
+  .contact__left, .contact__right {
+    width: 100%;
+  }
+}
 .contact__left {
   display: flex;
   flex-direction: column;
@@ -1452,12 +1457,22 @@ footer .footer-bottom p a:hover {
     font-size: 16px;
   }
 }
+@media screen and (max-width: 768px) {
+  .contact__left form {
+    width: 100%;
+  }
+}
 .contact__left form .form-row {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
   gap: 1rem;
+}
+@media screen and (max-width: 768px) {
+  .contact__left form .form-row {
+    flex-direction: column;
+  }
 }
 .contact__left form input {
   padding-block: 0.75rem;
